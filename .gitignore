@@ -1,0 +1,83 @@
+# ---------------------------------------------------------------------
+# Unity generated folders - all of these are rebuilt from Assets/ +
+# ProjectSettings/ + Packages/ on first open, so they must never be
+# committed. Everything else (including every .meta file) must be.
+# ---------------------------------------------------------------------
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Asset Store tooling
+/[Aa]ssets/AssetStoreTools*
+
+# Visual Scripting auto-generated
+/[Aa]ssets/Unity.VisualScripting.Generated*
+
+# Plastic SCM working metadata (Plastic is still the local safety net,
+# but its internals do not belong in the git history)
+/.plastic/
+
+# ---------------------------------------------------------------------
+# Auto-generated solution and project files - Unity regenerates these
+# from the packages and assemblies, so committing them only creates
+# noise and merge conflicts.
+# ---------------------------------------------------------------------
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+ExportedObj/
+.consulo/
+
+# ---------------------------------------------------------------------
+# Editor / OS noise
+# ---------------------------------------------------------------------
+.vs/
+.vscode/
+.idea/
+.gradle/
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+Desktop.ini
+
+# ---------------------------------------------------------------------
+# Builds and packages
+# ---------------------------------------------------------------------
+*.apk
+*.aab
+*.app
+*.unitypackage
+*.unitypackage.meta
+crashlytics-build.properties
+sysinfo.txt
+
+# ---------------------------------------------------------------------
+# Unity3D generated meta files for files we ignore
+# ---------------------------------------------------------------------
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Never commit the Addressables binary caches (not used here, but cheap insurance)
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/[Aa]ssets/[Ss]treaming[Aa]ssets/aa.meta
+/[Aa]ssets/[Ss]treaming[Aa]ssets/aa/*

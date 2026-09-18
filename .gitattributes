@@ -1,0 +1,36 @@
+# Normalise line endings so scene/prefab diffs stay reviewable across machines.
+* text=auto eol=lf
+
+# Unity serialised assets are YAML - keep them as text so diffs and merges work.
+*.cs        text diff=csharp eol=lf
+*.unity     text eol=lf merge=unityyamlmerge
+*.prefab    text eol=lf merge=unityyamlmerge
+*.asset     text eol=lf merge=unityyamlmerge
+*.mat       text eol=lf merge=unityyamlmerge
+*.anim      text eol=lf merge=unityyamlmerge
+*.controller text eol=lf merge=unityyamlmerge
+*.physicsMaterial text eol=lf merge=unityyamlmerge
+*.meta      text eol=lf merge=unityyamlmerge
+*.inputactions text eol=lf
+*.shader    text eol=lf
+*.json      text eol=lf
+*.md        text eol=lf
+
+# Windows-only files keep CRLF.
+*.bat       text eol=crlf
+*.vsconfig  text eol=crlf
+
+# Binary assets - never diff or convert these.
+*.fbx       binary
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.tga       binary
+*.psd       binary
+*.wav       binary
+*.mp3       binary
+*.ogg       binary
+*.ttf       binary
+*.otf       binary
+*.dll       binary
+*.unitypackage binary

@@ -531,7 +531,8 @@ GameObject:
   - component: {fileID: 3292974125201322533}
   - component: {fileID: 8670024429086066329}
   - component: {fileID: 7736864195958941674}
-  m_Layer: 0
+  - component: {fileID: 7100000000000000005}
+  m_Layer: 12
   m_Name: Wall Front
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1966,3 +1967,18 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+
+--- !u!114 &7100000000000000005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4347144742470455350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e8a1b27d6f4e0a9c3b5d7e1f2a4b60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CastleArcher.Health
+  maxHealth: 100
+  currentHealth: 100

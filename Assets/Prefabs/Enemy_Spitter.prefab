@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5547843344992243540}
   - component: {fileID: 8942064591055329166}
   - component: {fileID: 7100000000000000003}
+  - component: {fileID: 7200000000000000001}
   m_Layer: 9
   m_Name: Enemy_Spitter
   m_TagString: Enemy
@@ -125,7 +126,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5107627638592571396}
   serializedVersion: 5
-  m_Mass: 60
+  m_Mass: 40
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -174,6 +175,41 @@ MonoBehaviour:
   castleLayers:
     serializedVersion: 2
     m_Bits: 4096
+  impactClip: {fileID: 8300000, guid: 1492e60469191f341862a215c1ab2294, type: 3}
+  impactVolume: 0.6
+--- !u!114 &7100000000000000003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5107627638592571396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e8a1b27d6f4e0a9c3b5d7e1f2a4b60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CastleArcher.Health
+  maxHealth: 30
+  currentHealth: 30
+--- !u!114 &7200000000000000001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5107627638592571396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e2b4c16a9f4e7b8c0d3f5a1e7b9c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CastleArcher.EnemyDeathHandler
+  deathEffect: {fileID: 0}
+  effectLifetime: 1.5
+  animatorController: {fileID: 0}
+  deathTrigger: Death
+  fallbackDeathDelay: 0.6
+  deathClip: {fileID: 0}
+  deathVolume: 0.3
 --- !u!1001 &1947295351319215788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -200,7 +236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fd6c35a88aae43548856eacc3da484ef, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fd6c35a88aae43548856eacc3da484ef, type: 3}
       propertyPath: m_LocalRotation.x
@@ -208,7 +244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fd6c35a88aae43548856eacc3da484ef, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fd6c35a88aae43548856eacc3da484ef, type: 3}
       propertyPath: m_LocalRotation.z
@@ -220,7 +256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fd6c35a88aae43548856eacc3da484ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fd6c35a88aae43548856eacc3da484ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -496,20 +532,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.72172, y: 1.593232, z: 1.8035427}
   m_Center: {x: -0.012080073, y: 0.79430276, z: 0.32806486}
---- !u!114 &7100000000000000003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5107627638592571396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4e8a1b27d6f4e0a9c3b5d7e1f2a4b60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CastleArcher.Health
-  maxHealth: 30
-  currentHealth: 30
 --- !u!4 &2057185926846339399 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fd6c35a88aae43548856eacc3da484ef, type: 3}

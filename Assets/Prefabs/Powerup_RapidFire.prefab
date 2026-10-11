@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3030739764383293075}
   - component: {fileID: 7682176854002055685}
   - component: {fileID: 4905721946684914953}
+  - component: {fileID: 8400000000000000001}
   m_Layer: 13
   m_Name: Powerup_RapidFire
   m_TagString: Powerup
@@ -70,7 +71,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8a59fe5ec4498bc438db04ecdda99dbb, type: 2}
+  - {fileID: 2100000, guid: 893c6c04ab7ebd74e927a9c8b6d9294c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -158,6 +159,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &8400000000000000001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2303220280535795383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d0f8a71c9e4f4b6d3e2a8c7f0b4d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CastleArcher.PowerupPickup
+  definition: {fileID: 11400000, guid: d1f6b4c37e5a4b0d2f9a8c4e3b6d0f54, type: 2}
+  glowPrefab: {fileID: 100000, guid: 756d99540142b5e4a8d174e18a6310d9, type: 3}
+  glowScale: 0.35
+  collectZ: 0
+  collectRadius: 5
+  flySpeed: 25
 --- !u!1001 &5828885883836618080
 PrefabInstance:
   m_ObjectHideFlags: 0

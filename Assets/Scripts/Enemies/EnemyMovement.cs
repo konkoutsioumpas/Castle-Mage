@@ -6,7 +6,7 @@ namespace CastleArcher
     /// Moves an object toward the castle at a constant speed.
     /// </summary>
     /// <remarks>
-    /// Used by enemies and by falling power-ups. The body is kinematic: a tower-defence
+    /// Used by enemies and by power-ups. The body is kinematic: a tower-defence
     /// mover needs an exact speed, and a kinematic body cannot be pushed off course by
     /// bumping into another one.
     /// </remarks>
@@ -23,6 +23,20 @@ namespace CastleArcher
         /// <summary>Scales the configured speed. A slow or freeze effect can change this later without new movement code.</summary>
         public float SpeedMultiplier { get; set; } = 1f;
 
+        /// <summary>Replaces the prefab speed. Spawn definitions call this after the object exists.</summary>
+        public void SetMoveSpeed(float speed)
+        {
+            moveSpeed = Mathf.Max(0f, speed);
+        }
+
+        private bool holdPosition;
+
+        /// <summary>Stops the advance. A ranged enemy calls this once it has reached its firing line.</summary>
+        public void HoldPosition()
+        {
+            holdPosition = true;
+        }
+
         private void Awake()
         {
             body = GetComponent<Rigidbody>();
@@ -35,6 +49,11 @@ namespace CastleArcher
             if (transform.position.z < despawnZ)
             {
                 Destroy(gameObject);
+                return;
+            }
+
+            if (holdPosition)
+            {
                 return;
             }
 

@@ -29,6 +29,19 @@ namespace CastleArcher
             isDead = false;
         }
 
+        /// <summary>Replaces the pool. Used when a spawn definition supplies the real health.</summary>
+        public void SetMaxHealth(int value)
+        {
+            if (isDead)
+            {
+                return;
+            }
+
+            maxHealth = Mathf.Max(1, value);
+            currentHealth = maxHealth;
+            OnHealthChanged?.Invoke(currentHealth, maxHealth);
+        }
+
         public void TakeDamage(int amount)
         {
             if (isDead || amount <= 0)
@@ -45,7 +58,6 @@ namespace CastleArcher
             }
 
             isDead = true;
-            Debug.Log($"{name} reached 0 health.", this);
             OnDied?.Invoke();
         }
 

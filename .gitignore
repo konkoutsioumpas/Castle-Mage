@@ -81,3 +81,9 @@ sysinfo.txt
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 /[Aa]ssets/[Ss]treaming[Aa]ssets/aa.meta
 /[Aa]ssets/[Ss]treaming[Aa]ssets/aa/*
+
+# Third-party packs that cannot be published as raw files
+/[Aa]ssets/AssetStore/
+/[Aa]ssets/AssetStore.meta
+/[Aa]ssets/Course Library/
+/[Aa]ssets/Course Library.meta

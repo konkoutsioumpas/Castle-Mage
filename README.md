@@ -44,12 +44,21 @@ The spawner applies those numbers after it creates the instance. Changing a wave
 
 ## Credits
 
-Models, audio, and effects are third-party packs kept in `Assets/AssetStore` and `Assets/Audio`:
+## Credits and third-party assets
 
-- Castle — Simple Modular Castle Assets (Bublik)
-- Mage — Pack Heros
-- Skeleton — SazenGames
-- Minotaur — minotaur1
-- Spitter — Stylized 3D Monster
-- Particles — Unity Technologies Particle Pack
-- Audio — Music, RPG Audio, and Impact Sounds packs in `Assets/Audio`
+The code, data, scenes and prefabs in this repository are my own work.
+
+The 3D models, animations and particle effects come from Unity Asset Store packs. Their licence does not allow redistribution as source files, so they are **not included** here. Cloning the repository gives you the code and scenes, but the mage, enemies, castle, potion and hit effects will show as missing until you import these packs into `Assets/AssetStore`:
+
+- Castle: [Simple Modular Castle Assets](https://assetstore.unity.com/packages/3d/props/simple-modular-castle-assets-309297) (Bublik)
+- Mage: [Pack Heros](https://assetstore.unity.com/packages/3d/characters/humanoids/humans/free-hero-pack-273048) (OlyPoly)
+- Skeleton: [Stylized Low Poly Skeleton](https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/stylized-low-poly-skeleton-306857) (SazenGames)
+- Minotaur: [minotaur1](https://assetstore.unity.com/packages/3d/characters/minotaur1-196863) (ninj4ext)
+- Spitter: [Fantasy Monster 29](https://marketplace.unity.com/packages/3d/characters/creatures/fantasy-monster-29-rig-animation-pixeliusvita-358468) (PixeliusVita)
+- Particles: [Particle Pack](https://assetstore.unity.com/packages/vfx/particles/particle-pack-starter-assets-127325) (Unity Technologies)
+- Potion: [Create with Code Course Library](https://assetstore.unity.com/packages/templates/tutorials/create-with-code-complete-course-library-146048) (Unity)
+
+Audio is included. All of it is CC0:
+
+- [Impact Sounds](https://www.kenney.nl/assets/impact-sounds) and [RPG Audio](https://kenney.nl/assets/rpg-audio) by Kenney
+- [Medieval: The Old Tower Inn](https://opengameart.org/content/medieval-the-old-tower-inn) by RandomMind

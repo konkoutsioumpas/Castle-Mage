@@ -42,8 +42,6 @@ The spawner applies those numbers after it creates the instance. Changing a wave
 
 **Event flow.** A wave starts and spawns enemies from their definitions. Targeting publishes the current target. The shooter pulls an arrow from the pool and fires only while that target exists. The arrow damages `Health`. `OnDied` updates the score and plays death. Castle health reaching zero raises game over. Clearing every wave raises victory. The HUD only listens. It does not decide any of this.
 
-## Credits
-
 ## Credits and third-party assets
 
 The code, data, scenes and prefabs in this repository are my own work.

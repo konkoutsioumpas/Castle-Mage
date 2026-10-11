@@ -6,7 +6,7 @@
 
 A short arcade game made in Unity 6. You hold a castle wall. Enemies cross the field. The mage fires on his own, but only at targets inside a range and a forward cone. You move him so the cone covers the threat that matters.
 
-The GIF above is `Docs/gameplay.gif`. The play link is a placeholder until the WebGL build is uploaded.
+The GIF above is `Docs/gameplay.gif`.
 
 ## Controls
 

@@ -2,7 +2,7 @@
 
 ![Gameplay](Docs/gameplay.gif)
 
-**Play in the browser:** [Castle Mage on itch.io](https://kon-koutsioumpas.itch.io/castle-mage)
+**Play in the browser:** [Castle Mage on itch.io](https://kon-koutsioumpas.itch.io/castle-mage), [Castle Mage on Unity Play](https://play.unity.com/en/games/46ac2164-dc0d-4848-8cda-178afd77812f/castle-mage)
 
 A short arcade game made in Unity 6. You hold a castle wall. Enemies cross the field. The mage fires on his own, but only at targets inside a range and a forward cone. You move him so the cone covers the threat that matters.
 
